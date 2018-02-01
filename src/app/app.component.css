@@ -96,8 +96,13 @@
     background: #2d2d30;
     color: #bdbdbd;
 }
-.bg-1 h3 {color: #fff;}
-.bg-1 p {font-style: italic;}
+.bg-1 h3 {
+    color: #fff;
+}
+.bg-1 p {
+    font-style: italic;
+}
+
 /* .list-group-item:first-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
@@ -194,4 +199,22 @@ footer a:hover {
 }
 textarea {
     resize: none;
+}
+
+@media(max-width: 768px) {
+    .container {
+        padding: 10px 20px;
+    }
+
+    .thumbnail {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .third {
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-position-x: 25%
+    }
 }
