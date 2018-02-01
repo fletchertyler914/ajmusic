@@ -210,7 +210,7 @@ export class AppComponent implements OnInit {
       // Initialize Google Maps
       const map = new google.maps.Map(document.getElementById('googleMap'), mapProp);
 
-      google.maps.event.addDomListener(window, 'resize', function() {
+      google.maps.event.addDomListener(window, 'resize', function () {
         const center = map.getCenter();
         google.maps.event.trigger(map, 'resize');
         map.setCenter(center);
@@ -241,6 +241,32 @@ export class AppComponent implements OnInit {
             window.location.hash = hash;
           });
         } // End if
+      });
+
+      const $item = $('.carousel .item');
+      let $wHeight = $(window).height();
+      $item.eq(0).addClass('active');
+      $item.height($wHeight);
+      $item.addClass('full-screen');
+
+      $('.carousel img').each(function () {
+        const $src = $(this).attr('src');
+        const $color = $(this).attr('data-color');
+        $(this).parent().css({
+          'background-image': 'url(' + $src + ')',
+          'background-color': $color
+        });
+        $(this).remove();
+      });
+
+      $(window).on('resize', function () {
+        $wHeight = $(window).height();
+        $item.height($wHeight);
+      });
+
+      $('.carousel').carousel({
+        interval: 6000,
+        pause: 'false'
       });
     });
   }

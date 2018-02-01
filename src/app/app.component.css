@@ -1,3 +1,4 @@
+/* FONTS */
 .fa {
     padding: 20px;
     font-size: 2rem;
@@ -5,50 +6,52 @@
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook-f:before, .fa-facebook:before {
-    padding: 4px;
-  }
+}
 
-  .fa-facebook {
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+    padding: 4px;
+}
+
+.fa-facebook {
     background: #2D2D30;
     color: white;
-  }
-  
-  .fa-twitter {
+}
+
+.fa-twitter {
     background: #2D2D30;
     color: white;
-  }
-  
-  .fa-google {
+}
+
+.fa-google {
     background: #2D2D30;
     color: white;
-  }
-  
-  .fa-linkedin {
+}
+
+.fa-linkedin {
     background: #2D2D30;
     color: white;
-  }
-  
-  .fa-youtube {
+}
+
+.fa-youtube {
     background: #2D2D30;
     color: white;
-  }
-  
-  .fa-instagram {
+}
+
+.fa-instagram {
     background: #2D2D30;
     color: white;
-  }
+}
+/* END FONTS */
   
-  #contact {
-      text-align: center;
-      padding: 0px;
-  }
+/* CUSTOM CSS */
+#contact {
+    text-align: center;
+    padding: 0px;
+}
 
 .artist {
     width: auto;
@@ -81,41 +84,28 @@
 .person:hover {
     border-color: #f1f1f1;
 }
-/* .carousel, .carousel-slide {
-    position: static;
-} */
-.carousel-inner {
-    /* position: absolute; */
-    background-color: #000000;
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.carousel-inner img {
-    /* -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */  
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-}
-.carousel-caption h3 {
-    color: #fff !important;
-}
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-  }
-}
+/* END CUSTOM CSS */
+
 .bg-1 {
     background: #2d2d30;
     color: #bdbdbd;
 }
 .bg-1 h3 {color: #fff;}
 .bg-1 p {font-style: italic;}
-.list-group-item:first-child {
+/* .list-group-item:first-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
 }
 .list-group-item:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-}
+} */
 .thumbnail {
     /* padding: 0 0 15px 0; */
     border: none;
