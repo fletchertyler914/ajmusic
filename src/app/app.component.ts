@@ -265,7 +265,7 @@ export class AppComponent implements OnInit {
       });
 
       $('.carousel').carousel({
-        interval: 600000,
+        interval: 6000,
         pause: 'false'
       });
     });
