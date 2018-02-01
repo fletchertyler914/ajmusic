@@ -37,8 +37,6 @@
     <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
     <li data-target="#mycarousel" data-slide-to="1"></li>
     <li data-target="#mycarousel" data-slide-to="2"></li>
-    <li data-target="#mycarousel" data-slide-to="3"></li>
-    <li data-target="#mycarousel" data-slide-to="4"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -76,23 +74,15 @@
 
 <!-- Container (The Band Section) -->
 <div id="band" class="container text-center">
-  <h3>AJ LOGO?</h3>
-  <p><em>...Moonshiner Slogan Placeholders</em></p>
-  <p>Placeholder for AJ Sanders Bio. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <br>
+  <h3>AJ Sanders</h3>
   <div class="row">
-    <div class="artist col-sm-4">
-      <p class="text-center"><strong>AJ SANDERS</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo" class="collapse">
-        <p>Guitarist and Lead Vocalist</p>
-        <p>Loves long walks on the beach</p>
-        <p>Member since 1988</p>
+      <div class="artist col-sm-4">
+        <a>
+          <img src="assets/image1.jpg" class="img-circle person" alt="Random Name" height="255" width="255">
+        </a>
       </div>
     </div>
-  </div>
+  <p>Placeholder for AJ Sanders Bio. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 <!-- Container (ALBUM Section) -->
@@ -100,11 +90,6 @@
   <div class="container">
     <h3 class="text-center">First Single Header Placeholder</h3>
     <p class="text-center">Watch for the release on iTunes!</p>
-    <!-- <ul class="list-group">
-      <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
-      <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li> 
-      <li class="list-group-item">November <span class="badge">3</span></li> 
-    </ul> -->
     
     <div class="row text-center">
       <div class="album col-sm-5 col-lg-4">
@@ -112,11 +97,10 @@
           <img src="assets/cover_art.jpg" class="img-responsive" alt="Bar Tonight">
           <p><strong>Bar Tonight</strong></p>
           <p>Febuary 14th, 2018.</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Single</button>
+          <button class="btn" data-ng-href="#">Buy Single</button>
         </div>
       </div>
     </div>
-    
   </div>
   
   <!-- Modal -->
@@ -127,19 +111,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+          <h4>Join The 'Shiners</h4>
         </div>
         <div class="modal-body">
           <form role="form">
             <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-              <input type="number" class="form-control" id="psw" placeholder="How many?">
-            </div>
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span>Email Address:</label>
               <input type="text" class="form-control" id="usrname" placeholder="Enter email">
             </div>
-              <button type="submit" class="btn btn-block">Pay 
+              <button type="submit" class="btn btn-block">Subscribe 
                 <span class="glyphicon glyphicon-ok"></span>
               </button>
           </form>
@@ -157,15 +137,29 @@
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
-  <h2 class="text-center">Keep Up With The 'Shiners</h2>
-  <p class="text-center"><em>We love our fans!</em></p>
+  <h2 class="text-center">Want To Get 'Shiners News?</h2>
+  <p class="text-center"><em>Subscribe To Our Newsletter!</em></p>
+  <button class="btn" data-toggle="modal" data-target="#myModal">Subscribe</button>
+  
+  <hr>
+  
+  <div class="social">
+    <h2 class="text-center">So You're A Social 'Shiner?</h2>
+    <p class="text-center"><em>Follow Us On Social Media!</em></p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </div>
 
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-google"></a>
-  <a href="#" class="fa fa-youtube"></a>
-  <a href="#" class="fa fa-instagram"></a>
+  <hr>
 
+  <!-- Container (Blog Section) -->
+  <h2 class="blog text-center">Our Latest Tweets</h2>  
+  <div class="twitter-feed">
+    <p>Twitter Feed Will Be Here...</p>    
+  </div>
   <!-- <div class="row">
     <div class="col-md-4">
       <p>Fan? Drop a note.</p>
@@ -192,15 +186,6 @@
     </div>
   </div> -->
   <!-- End Container (Contact Section) -->
-
-  <br>
-
-  <!-- Container (Blog Section) -->
-  <h3 class="blog text-center">Recent Tweets</h3>  
-  <hr>
-  <div class="twitter-feed">
-    <p>Twitter Feed Will Be Here...</p>    
-  </div>
 
 </div>
 <!-- End Container (Blog Section) -->
