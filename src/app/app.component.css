@@ -50,7 +50,7 @@
 /* CUSTOM CSS */
 #contact {
     text-align: center;
-    padding: 0px;
+    /* padding: 0px; */
 }
 
 .artist {
@@ -65,7 +65,7 @@
 
 
 .twitter-feed {
-    height: 200px;
+    /* height: 200px; */
 }
 
 .container {
@@ -74,10 +74,8 @@
 .person {
     border: 10px solid transparent;
     margin-bottom: 15px;
+    margin-top: 50px;
 }
-/* .person:hover {
-    border: 10px solid #1E8F89;;
-} */
 
 .full-screen {
     background-size: cover;
@@ -85,14 +83,27 @@
     background-repeat: no-repeat;
 }
 
-.social {
-    margin-bottom: 40px;
+.mobile {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.news {
+}
+
+.socialButtons {
+    margin-top: 40px;
+    text-align: center;
 }
 /* END CUSTOM CSS */
 
 .bg-1 {
     background: #2d2d30;
     color: #bdbdbd;
+    margin-top: 50px;
 }
 .bg-1 h3 {
     color: #fff;
@@ -194,7 +205,7 @@ textarea {
     }
 
     .thumbnail {
-        max-width: 60%;
+        max-width: 50%;
         margin: 0 auto;
     }
 
@@ -203,5 +214,27 @@ textarea {
         background-position: left;
         background-repeat: no-repeat;
         background-position-x: 25%
+    }
+
+    .fa {
+        padding: 15px;
+    }
+
+    .socialButtons {
+        margin-top: 20px;
+    }
+
+    h2, h3 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .thumbnail {
+        max-width: 60%;
+    }
+
+    .mobile {
+        /* display: block; */
     }
 }

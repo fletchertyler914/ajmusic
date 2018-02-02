@@ -12,17 +12,17 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">BAND</a></li>
-        <li><a href="#tour">TOUR</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#myPage" data-toggle="collapse" data-target="#myNavbar">HOME</a></li>
+        <li><a href="#about" data-toggle="collapse" data-target="#myNavbar">ABOUT</a></li>
+        <li><a href="#music" data-toggle="collapse" data-target="#myNavbar">MUSIC</a></li>
+        <li><a href="#social" data-toggle="collapse" data-target="#myNavbar">SOCIAL</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li> 
+            <li><a href="#" data-toggle="collapse" data-target="#myNavbar">Merchandise</a></li>
+            <li><a href="#" data-toggle="collapse" data-target="#myNavbar">Extras</a></li>
+            <li><a href="#" data-toggle="collapse" data-target="#myNavbar">Media</a></li> 
           </ul>
         </li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
@@ -72,21 +72,19 @@
   </a>
 </div>
 
-<!-- Container (The Band Section) -->
-<div id="band" class="container text-center">
-  <h3>AJ Sanders</h3>
+<!-- Container (The About Section) -->
+<div id="about" class="container text-center">
   <div class="row">
       <div class="artist col-sm-4">
-        <a>
           <img src="assets/image1.jpg" class="img-circle person" alt="Random Name" height="255" width="255">
-        </a>
+          <h3>AJ Sanders</h3>
+          <p>Placeholder for AJ Sanders Bio. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
-    </div>
-  <p>Placeholder for AJ Sanders Bio. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>    
 </div>
 
-<!-- Container (ALBUM Section) -->
-<div id="tour" class="bg-1">
+<!-- Container (MUSIC Section) -->
+<div id="music" class="bg-1">
   <div class="container">
     <h3 class="text-center">First Single Header Placeholder</h3>
     <p class="text-center">Watch for the release on iTunes!</p>
@@ -135,60 +133,49 @@
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container">
-  <h2 class="text-center">Want To Get 'Shiners News?</h2>
-  <p class="text-center"><em>Subscribe To Our Newsletter!</em></p>
-  <button class="btn" data-toggle="modal" data-target="#myModal">Subscribe</button>
-  
-  <hr>
-  
-  <div class="social">
-    <h2 class="text-center">So You're A Social 'Shiner?</h2>
-    <p class="text-center"><em>Follow Us On Social Media!</em></p>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-google"></a>
-    <a href="#" class="fa fa-youtube"></a>
-    <a href="#" class="fa fa-instagram"></a>
-  </div>
-
-  <hr>
-
-  <!-- Container (Blog Section) -->
-  <h2 class="blog text-center">Our Latest Tweets</h2>  
-  <div class="twitter-feed">
-    <p>Twitter Feed Will Be Here...</p>    
-  </div>
-  <!-- <div class="row">
-    <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
-        </div>
+<!-- Container (Social Section) -->
+<div id="social" class="container">
+  <div class="row text-center">
+    <div class="album col-sm-6">
+      <h2 class="text-center">So You're A <br class="mobile">Social 'Shiner?</h2>
+      <p class="text-center"><em>Follow Us On Social Media!</em></p>
+      <div class="socialButtons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
       </div>
     </div>
-  </div> -->
-  <!-- End Container (Contact Section) -->
-
+  </div>
 </div>
-<!-- End Container (Blog Section) -->
+
+<hr>
+
+<!-- Container (Social Section) -->
+<div id="social" class="news center container">
+  <div class="row text-center">
+    <div class="album col-sm-8">
+        <h2 class="text-center">Want To Get <br class="mobile">'Shiners News?</h2>
+        <p class="text-center"><em>Subscribe To Our Newsletter!</em></p>
+        <button class="btn" data-toggle="modal" data-target="#myModal">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- Container (Social Section) -->
+<div id="social" class="news center container">
+  <div class="row text-center">
+    <div class="album col-sm-8">
+        <h2 class="blog text-center">Our Latest Tweets</h2>  
+        <div class="twitter-feed">
+          <p>Twitter Feed Will Be Here...</p>    
+        </div>
+    </div>
+  </div>
+</div>
 
 <!-- Add Google Maps -->
 <div id="googleMap"></div>
