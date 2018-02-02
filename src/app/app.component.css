@@ -9,7 +9,8 @@
 }
 
 .fa:hover {
-    opacity: 0.7;
+    color: #fff;
+    background-color: #1E8F89;
 }
 
 .fa-facebook-f:before, .fa-facebook:before {
@@ -83,10 +84,6 @@
     background-repeat: no-repeat;
 }
 
-.mobile {
-    display: none;
-}
-
 .center {
     text-align: center;
 }
@@ -95,8 +92,17 @@
     margin-top: 50px;
 }
 
+.social {
+    padding: 0 !important;
+}
+
+.socialButton {
+    margin-top: 25px;
+}
+
 .socialButtons {
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 /* END CUSTOM CSS */
@@ -128,9 +134,9 @@
     transition: .2s;
 }
 .btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
+    border: 1px solid #2d2d30;
+    background-color: #1E8F89;
+    color: #fff;
 }
 .modal-header, h4, .close {
     background-color: #333;
@@ -162,9 +168,10 @@
 }
 .navbar-nav li a:hover {
     color: #fff !important;
+    background-color: #29292c !important;    
 }
 .navbar-nav li.active a {
-    color: #fff !important;
+    color: #fff !important; 
     background-color: #29292c !important;
 }
 .navbar-default .navbar-toggle {
@@ -172,26 +179,22 @@
 }
 .open .dropdown-toggle {
     color: #fff;
-    background-color: #555 !important;
+    background-color: #29292c !important;
 }
 .dropdown-menu li a {
-    color: #000 !important;
+    color: #1E8F89 !important;
 }
 .dropdown-menu li a:hover {
-    background-color: red !important;
+    background-color: #29292c !important;
 }
 footer {
     background-color: #2d2d30;
     color: #f5f5f5;
-    padding: 32px;
 }
 footer a {
     color: #1E8F89;
 }
-footer a:hover {
-    color: #777;
-    text-decoration: none;
-}  
+
 .form-control {
     border-radius: 0;
 }
@@ -232,9 +235,5 @@ textarea {
 @media(max-width: 450px) {
     .thumbnail {
         max-width: 60%;
-    }
-
-    .mobile {
-        /* display: block; */
     }
 }

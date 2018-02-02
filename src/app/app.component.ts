@@ -268,6 +268,14 @@ export class AppComponent implements OnInit {
         interval: 6000,
         pause: 'false'
       });
+
+      // $('.navbar-collapse a').click(function (e) {
+      //   console.log($wHeight);
+      //   if ($wHeight < 450) {
+      //     console.log('collapse');
+      //     $('.navbar-collapse collapse in').collapse('toggle');
+      //   }
+      // });
     });
   }
 }
