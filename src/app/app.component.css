@@ -91,7 +91,8 @@
     text-align: center;
 }
 
-.news {
+.music {
+    margin-top: 50px;
 }
 
 .socialButtons {
@@ -103,7 +104,6 @@
 .bg-1 {
     background: #2d2d30;
     color: #bdbdbd;
-    margin-top: 50px;
 }
 .bg-1 h3 {
     color: #fff;
