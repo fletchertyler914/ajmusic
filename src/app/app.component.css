@@ -83,7 +83,14 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-position-y: 50px !important;    
+    background-position-y: 50px !important;  
+}
+
+.vignette {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: radial-gradient( circle, transparent 50%, black 150%), hotpink;        
 }
 
 .center {
@@ -287,15 +294,6 @@ textarea {
     
     object-fit: cover;
     object-position: left;
-/* 
-    width: 350px;
-    height: 300px;
-    border-radius: 35%;
-    margin: 30px;
-    -o-object-fit: cover;
-    object-fit: contain;
-    -o-object-position: center right;
-    object-position: right; */
   }
 
 
