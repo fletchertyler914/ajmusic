@@ -272,6 +272,10 @@ textarea {
     resize: none;
 }
 
+.mobile {
+    display: none;
+}
+
 @media(max-width: 768px) {
     .container {
         padding: 30px 12px;
@@ -327,6 +331,10 @@ textarea {
 
 @media(max-width: 450px) {
     .thumbnail {
-        max-width: 60%;
+        max-width: 85%;
+    }
+
+    .mobile {
+        display: block;
     }
 }
