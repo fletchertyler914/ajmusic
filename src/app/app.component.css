@@ -183,6 +183,10 @@ strong {
     font-weight: 600;
 }
 
+.navbar-brand {
+    margin-top: -5px;
+}
+
 .navbar li a, .navbar .navbar-brand, h2, h3 { 
     color: #1E8F89 !important;
 }
