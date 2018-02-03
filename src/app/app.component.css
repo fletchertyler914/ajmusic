@@ -79,8 +79,12 @@
     margin-top: 50px;
 }
 
+.item {
+    background-color: #000;
+}
+
 .full-screen {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -236,10 +240,18 @@ textarea {
         margin: 0 auto;
     }
 
-    .third {
-        background-size: cover;
+    .first {
+        background-position: right;
+        background-position-x: 65%
+    }
+
+    .second {
         background-position: left;
-        background-repeat: no-repeat;
+        background-position-x: 35%
+    }
+
+    .third {
+        background-position: left;
         background-position-x: 25%
     }
 
@@ -264,6 +276,10 @@ textarea {
     }
     .floatRight {
         float: none;
+    }
+
+    .full-screen {
+        background-size: cover;
     }
 }
 
