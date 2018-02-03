@@ -83,6 +83,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-position-y: 50px !important;    
 }
 
 .center {
@@ -276,6 +277,29 @@ textarea {
     display: none;
 }
 
+.image--cover {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 30px;
+  
+    border: 2.5px solid #1E8F89;
+    
+    object-fit: cover;
+    object-position: left;
+/* 
+    width: 350px;
+    height: 300px;
+    border-radius: 35%;
+    margin: 30px;
+    -o-object-fit: cover;
+    object-fit: contain;
+    -o-object-position: center right;
+    object-position: right; */
+  }
+
+
+
 @media(max-width: 768px) {
     .container {
         padding: 30px 12px;
@@ -287,18 +311,19 @@ textarea {
     }
 
     .first {
-        background-position: right;
         background-position-x: 65%
     }
 
     .second {
-        background-position: left;
         background-position-x: 35%
     }
 
     .third {
-        background-position: left;
         background-position-x: 25%
+    }
+
+    .fourth, .fifth, .sixth {
+        background-position-x: 95% !important;                
     }
 
     .fa {
