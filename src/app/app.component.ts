@@ -208,13 +208,13 @@ export class AppComponent implements OnInit {
       };
 
       // Initialize Google Maps
-      const map = new google.maps.Map(document.getElementById('googleMap'), mapProp);
+      // const map = new google.maps.Map(document.getElementById('googleMap'), mapProp);
 
-      google.maps.event.addDomListener(window, 'resize', function () {
-        const center = map.getCenter();
-        google.maps.event.trigger(map, 'resize');
-        map.setCenter(center);
-      });
+      // google.maps.event.addDomListener(window, 'resize', function () {
+      //   const center = map.getCenter();
+      //   google.maps.event.trigger(map, 'resize');
+      //   map.setCenter(center);
+      // });
 
       // Initialize Tooltip
       $('[data-toggle="tooltip"]').tooltip();
@@ -268,14 +268,12 @@ export class AppComponent implements OnInit {
         interval: 6000,
         pause: 'false'
       });
+    });
 
-      // $('.navbar-collapse a').click(function (e) {
-      //   console.log($wHeight);
-      //   if ($wHeight < 450) {
-      //     console.log('collapse');
-      //     $('.navbar-collapse collapse in').collapse('toggle');
-      //   }
-      // });
+    $('.toggleButton').click(function (e) {
+      if ($(window).width() <= 769) {
+        $('#myNavbar').collapse('toggle');
+      }
     });
   }
 }

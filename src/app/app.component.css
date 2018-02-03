@@ -55,8 +55,9 @@
 }
 
 .artist {
-    width: auto;
+    margin: 0 auto;
     float: none;
+    margin-top: -65px;
 }
 
 .album {
@@ -70,7 +71,7 @@
 }
 
 .container {
-    padding: 80px 120px;
+    padding: 80px 0px;
 }
 .person {
     border: 10px solid transparent;
@@ -105,6 +106,21 @@
     margin-bottom: 20px;
     text-align: center;
 }
+
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+
+ul {
+    text-align: right;
+}
+
+.dropdown-menu {
+    background-color: #000;    
+}
 /* END CUSTOM CSS */
 
 .bg-1 {
@@ -123,8 +139,12 @@
     border-radius: 0;
 }
 .thumbnail p {
-    margin-top: 15px;
+    margin-top: 10px;
     color: #555;
+}
+strong {
+    color: #1E8F89;
+    font-size: 2.5rem;
 }
 .btn {
     padding: 10px 20px;
@@ -204,7 +224,7 @@ textarea {
 
 @media(max-width: 768px) {
     .container {
-        padding: 10px 20px;
+        padding: 30px 12px;
     }
 
     .thumbnail {
@@ -229,6 +249,17 @@ textarea {
 
     h2, h3 {
         font-size: 2rem;
+    }
+
+    .artist {
+        margin-top: 0px;
+    }
+
+    .floatLeft {
+        float: none;
+    }
+    .floatRight {
+        float: none;
     }
 }
 
