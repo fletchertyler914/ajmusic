@@ -86,13 +86,6 @@
     background-position-y: 50px !important;  
 }
 
-.vignette {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background: radial-gradient( circle, transparent 50%, black 150%), hotpink;        
-}
-
 .center {
     text-align: center;
 }
