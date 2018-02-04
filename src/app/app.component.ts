@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
       });
 
       $('.carousel').carousel({
-        interval: 600000,
+        interval: 6000,
         pause: 'false'
       });
     });
@@ -73,6 +73,11 @@ export class AppComponent implements OnInit {
       if ($(window).width() <= 769) {
         $('#myNavbar').collapse('toggle');
       }
+    });
+
+    $('#mc_embed_signup .button').click(function (e) {
+      $('#myModal').modal('hide');
+      $('#mce-EMAIL').val('');
     });
   }
 }

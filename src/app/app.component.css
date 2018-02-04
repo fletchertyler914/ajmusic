@@ -128,7 +128,12 @@ ul {
     border-left: none !important;
     border-bottom: none  !important;
 }
-
+#mc_embed_signup .button {
+    background-color: #2d2d30;
+}
+#mc_embed_signup .button:hover {
+    background-color: #1E8F89;
+}
 #myModal {
     background-color: rgba(0, 0, 0, 0.7);
 }
