@@ -120,7 +120,7 @@ ul {
 }
 
 .dropdown-menu {
-    background-color: #000;    
+    background-color: #2d2d30;    
 }
 
 .modal-content {
@@ -166,6 +166,16 @@ hr {
 .green {
     color: #1E8F89;
 }
+
+p {
+    margin: auto !important;
+}
+
+
+
+#ppModal > div > div > div > ul {
+
+}
 /* END CUSTOM CSS */
 
 .bg-1 {
@@ -193,8 +203,15 @@ hr {
     font-size: 2.5rem;
     font-style: italic;
 }
-.white {
+strong {
+    color: #1E8F89 !important;
+}
+.white, .gray {
     color: #fff;
+}
+
+.dark {
+    background-color: #2d2d30;
 }
 .btn {
     padding: 12px 20px;
@@ -282,6 +299,10 @@ textarea {
     display: none;
 }
 
+.desktop {
+    display: block;
+}
+
 .image--cover {
     width: 250px;
     height: 250px;
@@ -357,5 +378,9 @@ textarea {
 
     .mobile {
         display: block;
+    }
+
+    .desktop {
+        display: none;
     }
 }
