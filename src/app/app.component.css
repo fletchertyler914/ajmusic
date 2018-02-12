@@ -323,7 +323,7 @@ textarea {
     }
 
     .thumbnail {
-        max-width: 50%;
+        max-width: 80%;
         margin: 0 auto;
     }
 
@@ -373,7 +373,7 @@ textarea {
 
 @media(max-width: 450px) {
     .thumbnail {
-        max-width: 85%;
+        max-width: 65%;
     }
 
     .mobile {
