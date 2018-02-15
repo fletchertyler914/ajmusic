@@ -324,13 +324,13 @@ textarea {
     margin: 0 auto;
 }
 
-.video-thumbnail {
+.video-thumbnail, .change {
     position: relative;
     display: inline-block;
     cursor: pointer;
   }
 
-  .video-thumbnail:before {
+  .video-thumbnail::before {
     position:absolute;
     top: 50%;
     left: 50%;
@@ -338,12 +338,26 @@ textarea {
     -webkit-transform: translate(-50%, -50%);
     content: "\f04b";
     font-family: FontAwesome;
-    font-size: 100px;
+    font-size: 90px;
     color: #fff;
     opacity: .8;
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
   }
-  .video-thumbnail:hover:before {
+  .change::before {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    content: "\f04c";
+    font-family: FontAwesome;
+    font-size: 90px;
+    color: #fff;
+    opacity: .8;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .video-thumbnail:hover::before, .change:hover::before {
     color: #eee;
   }
 
@@ -399,8 +413,11 @@ textarea {
         background-size: cover;
     }
 
-    .video-thumbnail:before {
-        font-size: 75px;
+    .video-thumbnail::before {
+        font-size: 70px;
+    }
+    .change::before {
+        font-size: 70px;
     }
 }
 
@@ -419,6 +436,9 @@ textarea {
     }
 
     .video-thumbnail:before {
+        font-size: 50px;
+    }
+    .change::before {
         font-size: 50px;
     }
 }

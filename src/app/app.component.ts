@@ -81,6 +81,7 @@ export class AppComponent implements OnInit {
     });
 
     $('#play-pause-button').click(function () {
+      $('.video-thumbnail').toggleClass('change');
       if ($('#media-video').get(0).paused) {
           $('#media-video').get(0).play();
       } else {
