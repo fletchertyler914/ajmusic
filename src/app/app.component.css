@@ -64,6 +64,8 @@
 .album {
     margin: 0 auto;
     float: none;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .container {
@@ -130,6 +132,7 @@ ul {
 }
 #mc_embed_signup .button {
     background-color: #2d2d30;
+    width: auto !important;
 }
 #mc_embed_signup .button:hover {
     background-color: #1E8F89;
@@ -350,7 +353,6 @@ textarea {
     }
 
     .thumbnail {
-        max-width: 70%;
         margin: 0 auto;
     }
 
@@ -396,6 +398,10 @@ textarea {
     .full-screen {
         background-size: cover;
     }
+
+    .video-thumbnail:before {
+        font-size: 75px;
+    }
 }
 
 @media(max-width: 450px) {
@@ -410,5 +416,9 @@ textarea {
 
     .desktop {
         display: none;
+    }
+
+    .video-thumbnail:before {
+        font-size: 50px;
     }
 }
