@@ -79,5 +79,13 @@ export class AppComponent implements OnInit {
       $('#myModal').modal('hide');
       $('#mce-EMAIL').val('');
     });
+
+    $('#play-pause-button').click(function () {
+      if ($('#media-video').get(0).paused) {
+          $('#media-video').get(0).play();
+      } else {
+          $('#media-video').get(0).pause();
+     }
+   });
   }
 }
